@@ -1,20 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+import StoreCoffee from './demoScreen/StoreCoffee'
+import MomoLoggin from './demoScreen/MomoLoggin'
+import FaceBookLoggin from './demoScreen/FaceBookLoggin'
+import DrackLightMode from './demoScreen/DrackLightMode'
+import RegisterForm from './demoScreen/RegisterForm'
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    return (
+        <>
+            {/* <StoreCoffee /> */}
+            {/* <MomoLoggin /> */}
+            {/* <FaceBookLoggin /> */}
+            {/* <DrackLightMode /> */}
+            <RegisterForm />
+        </>
+    )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
